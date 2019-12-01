@@ -7,9 +7,9 @@ pool:
 steps:
   - task: Cache@2
     inputs:
-    key: 'rustup | "$(Agent.OS)" | package | Cargo.toml'
-    path: $(RUSTUP_CACHE_FOLDER)
-    restoreKeys: 'rustup | "$(AGENT.OS)"'
+      key: 'rustup | "$(Agent.OS)" | package | Cargo.toml'
+      path: $(RUSTUP_CACHE_FOLDER)
+      restoreKeys: 'rustup | "$(AGENT.OS)"'
     displayName: Cache ~/.rustup
   - script: |
       curl https://sh.rustup.rs -sSf | sh -s -- -y
