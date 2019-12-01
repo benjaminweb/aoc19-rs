@@ -1,4 +1,3 @@
-# Advent of Code 2019
 # Advent of Code 2019 Solutions in Rust
 
 - [x] **Day 1.1**: calculate total fuel required for all modules of space craft based on mass
